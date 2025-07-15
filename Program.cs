@@ -23,7 +23,7 @@ builder.Services.AddScoped<RoleManager<IdentityRole>>();// made sure it's availa
 
 var app = builder.Build();
 
-// Role seeding for Carrier and Shipper roles
+// Role seeding for Carrier and Shipper roles.
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
